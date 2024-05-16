@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <View style={styles.box}>
       <Text style={styles.textNav}>ВАА-РГх ОРКИ ВПЕРЕД</Text>
@@ -11,7 +11,7 @@ export const Navbar = () => {
 
 const styles = StyleSheet.create({
   box: {
-    width: "100vw",
+    width: "100%",
     marginBottom: 10,
     marginRight: 10,
   },
