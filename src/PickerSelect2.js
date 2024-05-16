@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 import { Picker } from "@react-native-picker/picker";
-// import styles from "./Styles";
 
 export const MyComponent = () => {
   // --- 1. сохраняем состояние полученных value через стандартный метод useState
@@ -208,8 +207,11 @@ const styles = StyleSheet.create({
   },
   picker_box: {
     width: "90%",
-    marginBottom: "5vh",
-    marginLeft: "5vw",
+    marginBottom: 10,
+    marginLeft: 10,
+    backgroundColor: "grey",
+    color: "#fff",
+    borderBlockColor: "#000",
   },
   textPic: {
     marginTop: 10,

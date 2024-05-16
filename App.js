@@ -1,9 +1,9 @@
 import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
-import { Text, View, SafeAreaView, StyleSheet } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { Navbar } from "./src/Navbar";
 import { MyComponent } from "./src/PickerSelect2";
-// import styles from "./src/Styles";
 
 const App = () => {
   return (
@@ -17,6 +17,28 @@ const App = () => {
     </View>
   );
 };
+
+export default App;
+// App.js
+
+// import { createStackNavigator } from "@react-navigation/stack";
+// import { HomeScreen } from "./src/HomeScreen";
+// import { DetailsScreen } from "./src/DetailsScreen";
+
+// const Stack = createStackNavigator();
+
+// export const App = () => {
+//   return (
+//     // <NavigationContainer>
+//     //   <Stack.Navigator initialRouteName="Home">
+//     //     <Stack.Screen name="Home" component={HomeScreen} />
+//     //     <Stack.Screen name="Details" component={DetailsScreen} />
+//     //   </Stack.Navigator>
+//     // </NavigationContainer>
+//   );
+// };
+
+// --------------------------------------------------------------------------------
 
 const styles = StyleSheet.create({
   container: {
@@ -36,4 +58,3 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
 });
-export default App;
